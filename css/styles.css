@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
 
+/* Link paraconsulta de css flexbox: https://csstricks.com/snippets/css/a-guide-to-flexbox/ */
+
 :root {
     --bg-gray: #DDDDDD;
     --color-primary: #4D41C0;
     --white: #FFFFFF;
+    --text-gray: #4A4A4A;
 }
 
 * {
@@ -55,4 +58,43 @@ a, a:hover {
 
 .dsmovie-contact-container img {
     margin: 10px;
+}
+
+#dsmovie-card-list {
+    padding: 40px;
+}
+
+.dsmovie-card {
+    width: 360px;
+}
+
+.dsmovie-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.dsmovie-card-description {
+    background-color: var(--white);
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-card-description h3 {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.dsmovie-btn, .dsmovie-btn:hover {
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
